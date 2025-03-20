@@ -4,9 +4,12 @@ import { NavLink, Outlet } from "react-router-dom";
 function Root() {
   return (
     <div>
-      <NavLink to={"/"}>Home</NavLink>
-      <NavLink to={"/login"}>login</NavLink>
-      <NavLink to={"/app"}>app</NavLink>
+      <nav>
+        <NavLink to={"/"}>Home</NavLink>
+        <NavLink to={"/login"}>Login</NavLink>
+        <NavLink to={"/app"}>App</NavLink>
+        <NavLink to={"/posts"}>Posts</NavLink>
+      </nav>
       <div id="details">
         <Outlet />
       </div>

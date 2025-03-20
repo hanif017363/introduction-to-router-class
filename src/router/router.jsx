@@ -5,6 +5,7 @@ import App from "../App";
 import NoFound from "../pages/NoFound";
 import Root from "../pages/Root";
 import NotFound from "../pages/NotFound";
+import PostList, { loader } from "../pages/PostList";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ export const router = createBrowserRouter([
       {
         path: "/app",
         element: <App />,
+      },
+      {
+        path: "/posts",
+        element: <PostList />,
+        loader: loader,
       },
     ],
   },
